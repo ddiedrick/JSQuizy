@@ -1,0 +1,17 @@
+*{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: large; 
+}
+body{
+    background-color: firebrick;
+}
+
+#main{
+    display: none;
+}
+#main.show{
+    display: block;
+}
+#launch.hide{
+    display: none;
+}
