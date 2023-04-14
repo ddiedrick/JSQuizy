@@ -9,14 +9,33 @@
 
 </head>
 <body>
-    <header id="launch"> 
-        <div class="header"> Javascript Quiz Challenge </div>
-        <button id="start">Start</button>
+    <header> 
+        <div class="header"> Javascript Quiz Challenge  </div>
     </header>
+    
+    <div id ="start" class ="start">
+        <button class="startBtn1">Start</button>
+    </div>      
    
-<main id="main">
+    <main id="main">
+        <div>
+            <h1 id="ask"> Question 1</h1>
+            <ul>
+                <li> <button class="choice" id="ans1" value="a"> </button></li>
+                <li> <button class="choice" id="ans2" value="b"> </button></li>
+                <li> <button class="choice" id="ans3" value="c"> </button></li>
+                <li> <button class="choice" id="ans4" value="d"> </button></li>
+            </ul>
+            <div id="check">
+                <p>Correct or Incorrect</p>
+            </div>
 
-</main>
+        </div>
+    </main>
+    <div id ="reset" class ="reset">
+        <button class="refresh">Reset</button>
+    </div>   
+
     <script src="assets/script.js"></script>
 </body>
 </html>
