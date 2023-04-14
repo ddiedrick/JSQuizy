@@ -5,13 +5,47 @@
 body{
     background-color: firebrick;
 }
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    padding: 32px;
+}
+.start{
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
+.startBtn1{
+    
+    background-color: #4CAF50;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 32px;
+}
+.reset{
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
+.refresh{
+    
+    background-color: #4CAF50;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 32px;
+}
 
-#main{
+ #main{
     display: none;
 }
 #main.show{
     display: block;
 }
-#launch.hide{
+#main.hide{
+    display: none;
+}
+
+#start.hide{
     display: none;
 }
