@@ -35,12 +35,18 @@ body{
     text-align: center;
     font-size: 32px;
 }
+ul{
+    list-style-type: none;
 
+}
  #main{
     display: none;
 }
 #main.show{
-    display: block;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    border: solid 5pt;
 }
 #main.hide{
     display: none;
