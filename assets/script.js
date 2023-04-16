@@ -14,74 +14,94 @@ var answerBtn4 = document.querySelector("#ans4");
 
 const questions = [
 
-    { question: "",
-      answers: [
+    { question: "Which is the correct way to write a comment in JavaScript?",
+      answers: {
+        0: "{# ... #}",
+        1: "<!--- .... ---!>",
+        2: "// ....",
+        3: "|| ..."
 
-    ],
-    answer: ""
+    },
+    correctAnswer: "2"
     },
 
-    { question: "",
-      answers: [
+    { question: "Which array method sorts the elements of an array?",
+    answers: {
+      0:"sort()",
+      1:"arraySort()",
+      2:"order",
+      3:"changeOrder()"
 
-    ],
-    answer: ""
+  },
+  correctAnswer: "0"
+    },
+    { question: "What is a function with no return value called?",
+    answers: {
+      0:"Static function",
+      1:"Method",
+      2:"proccedure",
+      3:"Dynamic function"
+
+  },
+  correctAnswer: "2"
+    },
+    { question: "Which of the following is a correct way to write “Hello World” on the web page?",
+    answers: {
+      0:"document.write(“Hello World”);",
+      1:"system.out.println(“Hello World”);",
+      2:"print(“Hello World”);",
+      3:"response.write(“Hello World”);"
+
+  },
+  correctAnswer: "0"
+    },
+    { question: "How do you create a new function in JavaScript?",
+    answers: {
+      0:"new.function() {}",
+      1:"function myFunction() {}",
+      2:"function:myFunction() {}",
+      3:"function = myFunction() {}"
+
+  },
+  correctAnswer: "1"
+    },
+    { question: "Can you set any style to HTML tag using JavaScript?",
+    answers: {
+      0:"yes",
+      1:"no",
+      2:"",
+      3:""
+
+  },
+  correctAnswer: "0"
+    },
+    { question: "How do you open a new window with JavaScript?",
+    answers: {
+      0:"window.open();",
+      1:"window.new();",
+      2:"open(new window());",
+      3:"window.open_new();"
+
+  },
+  correctAnswer: "0"
     },
     { question: "",
-      answers: [
+    answers: {
+      0:"{# ... #}",
+      1:"<!--- .... ---!>",
+      2:"// ....",
+      3:"\\ ..."
 
-    ],
-    answer: ""
+  },
+  correctAnswer: ""
     },
-    { question: "",
-      answers: [
-
-    ],
-    answer: ""
-    },
-    { question: "",
-      answers: [
-
-    ],
-    answer: ""
-    },
-    { question: "",
-      answers: [
-
-    ],
-    answer: ""
-    },
-    { question: "",
-      answers: [
-
-    ],
-    answer: ""
-    },
-    { question: "",
-      answers: [
-
-    ],
-    answer: ""
-    },
-    { question: "",
-      answers: [
-
-    ],
-    answer: ""
-    },
-    { question: "",
-      answers: [
-
-    ],
-    answer: ""
-    }
  
    
 ]
 function startGame() {
   document.querySelector("#main").setAttribute("class","show");
   document.querySelector("#start").setAttribute("class","hide");
- 
+ loadQuestion(0);
   timerCount = 60;
 
 
@@ -114,10 +134,10 @@ function startTimer() {
 
 function loadQuestion(n){
 askQ.textContent=questions[n].question;
-answerBtn1.textContent - questions[n].answers[0];
-answerBtn2.textContent - questions[n].answers [1];
-answerBtn3.textContent - questions[n].answers [2];
-answerBtn4.textContent - questions[n].answers [3];
+answerBtn1.textContent = questions[n].answers[0];
+answerBtn2.textContent = questions[n].answers [1];
+answerBtn3.textContent = questions[n].answers [2];
+answerBtn4.textContent = questions[n].answers [3];
 questionNumber = n;
 }
 
@@ -130,11 +150,11 @@ function resetGame() {
 // Attaches event listener to button
 resetBtn.addEventListener("click", resetGame);
 
-startBtn.addEventListener("click", function(){
+/*startBtn.addEventListener("click", function(){
   document.querySelector("#main").setAttribute("class","show");
   document.querySelector("#start").setAttribute("class","hide");
-});
-
+});*/
+startBtn.addEventListener("click",startGame);
 function testing(){
 alert("testing");
 }
