@@ -11,7 +11,7 @@ const ans4 = document.getElementById('ans4');
 var timerCount=60;
 var timerElement = document.querySelector(".timer");
 var id=0;
-
+var initials="";
 
 const questions = [
 
@@ -97,7 +97,7 @@ function startTimer() {
     // Tests if time has run out
     if (timerCount == 0) {
       // Clears interval
-      clearTimeout(timer);
+      
       quizContainer.setAttribute("class","hide");
       options.textContent="game over"
      
@@ -107,6 +107,15 @@ function startTimer() {
   }, 1000);
   
   
+}
+function getInitials() {
+
+
+  initials = prompt("Enter your initials");
+  
+  alert("Thank you for playing "+initials);
+  quizContainer.setAttribute("class","hide");
+  options.setAttribute("class","hide");
 }
 function loadQuiz(){// variable to store the HTML output
   var start = true;
@@ -184,6 +193,7 @@ function loadQuiz(){// variable to store the HTML output
       } else {
           results[0].innerHTML = "False";
           results[0].style.color = "red";
+          timerCount=timerCount-5;
       }
   })
   
@@ -199,14 +209,21 @@ function loadQuiz(){// variable to store the HTML output
     }
     else{
       quizContainer.innerText= "game over";
-      
+      getInitials();
+      id=0;
+     
+
+
   }
+ 
 })
 
  
 }
  
-  
+
+
+
 
 
 
@@ -220,3 +237,5 @@ startBtn.addEventListener("click",startTimer);
 // on submit, show resultsContainer
 //submitButton.addEventListener('click', showResults);
 resetBtn.addEventListener('click',loadQuiz);
+id=0;
+resetBtn.addEventListener('click',startTimer);
