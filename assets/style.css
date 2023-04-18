@@ -23,7 +23,7 @@ body{
     text-align: center;
     font-size: 32px;
 }
-.reset{
+#actions{
     display: flex;
     justify-content: center;
     padding: 32px;
@@ -35,23 +35,71 @@ body{
     text-align: center;
     font-size: 32px;
 }
-ul{
-    list-style-type: none;
-
+.evaluate{
+    
+    background-color: #4CAF50;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 32px;
 }
+
  #main{
     display: none;
 }
 #main.show{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 12px;
-    border: solid 5pt;
+    
+    padding: 30px;
+    
 }
 #main.hide{
+    display: none;
+}
+#options{
+    display: none;
+}
+#options.show{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    padding: 20px;
+    border: solid 5pt;
+}
+#options.hide{
     display: none;
 }
 
 #start.hide{
     display: none;
 }
+#option{
+	padding: 10px;
+	width: 15vw;
+	height: 10vh;
+	background-color: lightskyblue;
+	
+}
+#option:hover{
+	background-color: lightgoldenrodyellow;
+}
+.results{
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+
+.timer {
+    
+    float: right;
+    height: 40px;
+    padding: 30px;
+    background: #13293d;
+    color: #fff;
+    text-align: center;
+  }
+  
+  

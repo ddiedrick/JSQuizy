@@ -18,23 +18,27 @@
     </div>      
    
     <main id="main">
-        <div>
-            <h1 id="ask"> Question 1</h1>
-            <ul id="list">
-                <li> <button class="choice" id="ans1" value="a"> </button></li>
-                <li> <button class="choice" id="ans2" value="b"> </button></li>
-                <li> <button class="choice" id="ans3" value="c"> </button></li>
-                <li> <button class="choice" id="ans4" value="d"> </button></li>
-            </ul>
-            <div id="check">
-                <p>Correct or Incorrect</p>
-            </div>
 
-        </div>
+    
+        
     </main>
-    <div id ="reset" class ="reset">
+    <div class="results"></div>
+    <div id="options"> 
+        <button class="option" onclick="" id="ans1" >option1 </button>
+        <button class="option" id="ans2" > option2</button>
+        <button class="option" id="ans3" >option3 </button>
+        <button class="option" id="ans4" > option4</button>
+    </div>  
+    <aside class= "timer">
+        <div class = "timer-text">60</div>
+       
+    </aside>
+    <div id ="actions">
         <button class="refresh">Reset</button>
+        <button class ="evaluate" id="submit">check</button>
     </div>   
+    <button class="next">next</button>
+    
 
     <script src="assets/script.js"></script>
 </body>
